@@ -1,0 +1,7 @@
+q6. Show first name, last name, and the full province name of each patient.
+
+
+select  patients.first_name,patients.last_name,province_names.province_name
+from patients
+INNER Join province_names
+on patients.province_id=province_names.province_id
