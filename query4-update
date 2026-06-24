@@ -1,0 +1,15 @@
+SQL UPDATE Statement
+The UPDATE statement is used to modify the existing records in a table.
+
+UPDATE Syntax
+UPDATE tablename
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+Note: Be sure to specify the where clause. Failing to include the where clause will result in all of the rows to be updated.
+
+qn4. Update the patients table for the allergies column. If the patient's allergies is null then replace it with 'NKA'
+
+
+update patients
+set allergies="NKA"
+WHERE allergies is NULL
