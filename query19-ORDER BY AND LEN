@@ -1,0 +1,8 @@
+Display every patient's first_name.
+Order the list by the length of each name and then by alphabetically.
+
+select admissions.patient_id,first_name,last_name 
+from patients
+INNER JOIN admissions
+ON patients.patient_id=admissions.patient_id
+WHERE diagnosis='Dementia';
